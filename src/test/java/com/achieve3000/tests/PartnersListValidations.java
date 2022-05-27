@@ -1,5 +1,6 @@
 package com.achieve3000.tests;
 
+import com.achieve3000.enums.WhoWeAre;
 import com.achieve3000.pages.BasePage;
 import com.achieve3000.pages.PartnersListPage;
 import com.achieve3000.utilities.ConfigReader;
@@ -31,7 +32,7 @@ public class PartnersListValidations {
 
         BasePage.clickMenuToggle();
 
-        BasePage.clickByLinkText(PartnersListPage.WhoWeAre.PARTNERS.getValue());
+        BasePage.clickByLinkText(WhoWeAre.PARTNERS.getValue());
 
         List<WebElement> allPartners = PartnersListPage.getAllPartners();
 
